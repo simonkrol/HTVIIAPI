@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startL: MyString
+  endL: MyString
+  startT: 2018-02-24 13:25:53
+  endT: 2018-02-24 13:25:53
+  type: 
+  user: one
+
+two:
+  startL: MyString
+  endL: MyString
+  startT: 2018-02-24 13:25:53
+  endT: 2018-02-24 13:25:53
+  type: 
+  user: two
