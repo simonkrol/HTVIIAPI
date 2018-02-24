@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 20180224182553) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "rides", force: :cascade do |t|
     t.string "startL"
     t.string "endL"
-    t.time "startT"
-    t.time "endT"
-    t.string "type"
-    t.integer "user_id"
+    t.datetime "startT"
+    t.datetime "endT"
+    t.string "transForm"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_rides_on_user_id"
@@ -34,4 +37,5 @@ ActiveRecord::Schema.define(version: 20180224182553) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "rides", "users"
 end
