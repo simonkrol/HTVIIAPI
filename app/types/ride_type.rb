@@ -4,9 +4,8 @@ RideType = GraphQL::ObjectType.define do
   field :id, types.ID
   field :startL, types.String
   field :endL, types.String
-
-  """field :startT, types.time
-  field :endT, types.time/"""
+  field :startT, types.String
+  field :endT, types.String
   field :transForm, types.String
   field :user do
     type UserType
