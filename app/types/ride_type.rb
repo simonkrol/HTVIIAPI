@@ -7,7 +7,7 @@ RideType = GraphQL::ObjectType.define do
 
   """field :startT, types.time
   field :endT, types.time/"""
-  field :type, types.String
+  field :TransForm, types.String
   field :user do
     type UserType
     resolve -> (ride, args, ctx) {
